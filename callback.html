@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Connecting to IonDrive…</title>
+  <script>
+    window.location.replace("iondrive://callback" + window.location.search);
+  </script>
+</head>
+<body style="font-family: -apple-system, sans-serif; text-align: center; padding: 40px;">
+  <h2>✓ Tesla Authorized</h2>
+  <p><a id="openApp" href="#">Tap here to return to IonDrive</a> or copy this page's URL.</p>
+  <script>
+    document.getElementById("openApp").href = "iondrive://callback" + window.location.search;
+  </script>
+</body>
+</html>
